@@ -99,6 +99,11 @@ LeadPages Text Manager
     ```sh
     pip install -r requirements.txt
     ```
+    Note: During the installation, you might see the following warning:
+    ```sh
+    google-ai-generativelanguage 0.6.6 requires protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5, but you'll have protobuf 5.27.2 which is incompatible.
+    ```
+    You can safely ignore this warning as it does not affect the functionality of the code.
 4. Create a .env file in the root directory and add Gemini API key as shown in .env.example:
     ```sh
     GOOGLE_GEMINI_API_KEY=add_gemini_api_key_here

@@ -8,12 +8,29 @@ It includes functions to handle text extraction, text replacement using Generati
 import json
 from pathlib import Path
 
+# Core modules for AI and text processing
 from core.generative_ai import GenerativeAI
 from core.text_extractor import TextExtractor
 from core.text_replacer import TextReplacer
 
-from config import INPUT_JSON_PATH, OUTPUT_DIR, EXTRACTED_TEXT_PATH, REPLACED_TEXT_PATH, GENAI_API_KEY, GENAI_MODEL_NAME, REPLACED_WITH_ORIGINAL_JSON_PATH
-from utils import load_json_file, save_json_file, ensure_directory_exists, create_text_mapping
+# Configuration settings
+from config import (
+    INPUT_JSON_PATH,
+    OUTPUT_DIR,
+    EXTRACTED_TEXT_PATH,
+    REPLACED_TEXT_PATH,
+    GENAI_API_KEY,
+    GENAI_MODEL_NAME,
+    REPLACED_WITH_ORIGINAL_JSON_PATH
+)
+
+# Utility functions
+from utils import (
+    load_json_file,
+    save_json_file,
+    ensure_directory_exists,
+    create_text_mapping
+)
 
 def extract_text_from_json(json_data: dict) -> dict:
     """Extract text from JSON data."""
@@ -25,17 +42,15 @@ def replace_text_with_generative_ai(extracted_text: dict, original_json: dict) -
     try:
         if not GENAI_API_KEY:
             raise ValueError("API_KEY environment variable is not set.")
-
+        
         generative_ai = GenerativeAI(api_key=GENAI_API_KEY, model_name=GENAI_MODEL_NAME)
         generative_ai.configure()
-
+        
         text_replacer = TextReplacer(json_data=extracted_text, generative_ai=generative_ai)
-
         replaced_text = text_replacer.rephrase_section()
         save_json_file(replaced_text, REPLACED_TEXT_PATH)
-
         text_mapping = create_text_mapping(extracted_json=extracted_text, replaced_json=replaced_text)
-        return text_replacer.replace_text_in_original(original=original_json, text_mapping=text_mapping)
+        return text_replacer.replace_text_in_original(original_json, text_mapping)
 
     except ValueError as ve:
         print(f"ValueError: {ve}")
@@ -63,7 +78,6 @@ def main():
         replaced_text = replace_text_with_generative_ai(extracted_text, json_data)
         save_json_file(replaced_text, REPLACED_WITH_ORIGINAL_JSON_PATH)
         print(f"Text replacement complete. Updated JSON saved to {REPLACED_WITH_ORIGINAL_JSON_PATH}.")
-
 
     except FileNotFoundError as fnf_error:
         print(f"FileNotFoundError: {fnf_error}. Please check if the file exists or the path is correct.")
