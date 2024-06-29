@@ -32,17 +32,20 @@ class TextExtractor:
                 if 'type' in data:
                     if data['type'] in ['LpButtonReact', 'LpTextReact', 'paragraph', 'headline']:
                         current_text_type = data['type']
-                
-                if 'text' in data:
+
+                # Extract text if 'text' key exists current_text_type is not null
+                if 'text' in data and current_text_type:
                     text = data['text'].strip()
                     if section_name and (current_text_type, text) not in self.extracted_set:
                         self.append_text_to_section(results, section_name, current_text_type, text)
                         self.extracted_set.add((current_text_type, text))
-                
+
+                # Recursively extract text from 'content' if it's a list
                 if 'content' in data and isinstance(data['content'], list):
                     for item in data['content']:
                         self.extract_text(item, section_name, results, current_text_type)
-                
+
+                # Recursively call extract_text for all values in the dictionary
                 for value in data.values():
                     self.extract_text(value, section_name, results, current_text_type)
             
