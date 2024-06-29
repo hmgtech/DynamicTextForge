@@ -1,3 +1,10 @@
+"""
+Author: Hiteshkumar Gupta
+Email: hiteshgupta2198@gmail.com
+Description: This script extracts text from a JSON file, uses Generative AI to replace the text, and saves the updated JSON. 
+It includes functions to handle text extraction, text replacement using Generative AI, and error handling to ensure smooth execution.
+"""
+
 import json
 from pathlib import Path
 
