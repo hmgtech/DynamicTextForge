@@ -103,10 +103,6 @@ LeadPages Text Manager
     ```sh
     GOOGLE_GEMINI_API_KEY=add_gemini_api_key_here
     ```
-5. Install the package:
-    ```sh
-    python setup.py install
-    ```
 
 ## Usage
 
