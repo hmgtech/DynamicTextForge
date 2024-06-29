@@ -6,8 +6,10 @@ class GenerativeAI:
     def __init__(self, api_key, model_name):
         """
         Initialize the GenerativeAI class with API key and model name.
-        :param api_key: API key for authentication with Generative AI service.
-        :param model_name: Name of the Generative AI model to use for text generation.
+        
+        Args:
+        - api_key (str): API key for authentication with Generative AI service.
+        - model_name (str): Name of the Generative AI model to use for text generation.
         """
         self.api_key = api_key
         self.model_name = model_name
@@ -22,9 +24,15 @@ class GenerativeAI:
     def generate_text(self, prompt_text):
         """
         Generate text based on the provided prompt using the configured model.
-        :param prompt_text: Text prompt to generate content from.
-        :return: JSON response containing generated content.
-        :raises ValueError: If there's an issue decoding the JSON response.
+        
+        Args:
+        - prompt_text (str): Text prompt to generate content from.
+        
+        Returns:
+        - dict: JSON response containing generated content.
+        
+        Raises:
+        - ValueError: If there's an issue decoding the JSON response.
         """
         response = self.model.generate_content(prompt_text)
         

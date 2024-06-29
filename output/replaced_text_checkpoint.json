@@ -1,0 +1,227 @@
+[
+    {
+        "section_name": "Hero",
+        "content": [
+            {
+                "type": "headline",
+                "text": "Build Landing Pages That Convert, Effortlessly."
+            },
+            {
+                "type": "paragraph",
+                "text": "LeadPages empowers you to create high-converting landing pages in minutes, without coding. Drag-and-drop elements, personalize your design, and watch your leads skyrocket."
+            },
+            {
+                "type": "LpButtonReact",
+                "text": "Start Building Your Landing Page"
+            }
+        ]
+    },
+    {
+        "section_name": "Countdown Timer",
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "Ready to launch your next killer landing page?"
+            },
+            {
+                "type": "headline",
+                "text": "Our special offer ends soon! Don't miss out."
+            }
+        ]
+    },
+    {
+        "section_name": "Testimonial",
+        "content": [
+            {
+                "type": "headline",
+                "text": "Effortless Landing Page Creation"
+            },
+            {
+                "type": "paragraph",
+                "text": "\"LeadPages has been a game-changer for our business. We used to struggle with creating high-converting landing pages, but LeadPages makes it so simple. The drag-and-drop interface is intuitive, the templates are beautiful, and the results have been incredible. We've seen a significant increase in leads and conversions since we started using LeadPages.\""
+            },
+            {
+                "type": "paragraph",
+                "text": "Sarah Jones,\nMarketing Manager at Growth Solutions"
+            }
+        ]
+    },
+    {
+        "section_name": "Content",
+        "content": [
+            {
+                "type": "headline",
+                "text": "Craft Stunning Landing Pages with Ease."
+            },
+            {
+                "type": "paragraph",
+                "text": "Stop struggling with complex website builders. LeadPages empowers you to create high-converting landing pages in minutes, driving more leads and sales for your business."
+            },
+            {
+                "type": "LpTextReact",
+                "text": "Effortless drag-and-drop editor"
+            },
+            {
+                "type": "LpTextReact",
+                "text": "Stunning, mobile-responsive templates"
+            },
+            {
+                "type": "LpTextReact",
+                "text": "Powerful lead capture forms"
+            },
+            {
+                "type": "LpTextReact",
+                "text": "A/B testing for optimized results"
+            },
+            {
+                "type": "LpTextReact",
+                "text": "Seamless integrations with your favorite tools"
+            }
+        ]
+    },
+    {
+        "section_name": "Why",
+        "content": [
+            {
+                "type": "headline",
+                "text": "Why Choose LeadPages?"
+            },
+            {
+                "type": "headline",
+                "text": "Effortless Landing Page Creation"
+            },
+            {
+                "type": "paragraph",
+                "text": "Design stunning landing pages in minutes, no coding required. Drag and drop elements, choose from beautiful templates, and build high-converting pages that drive results."
+            },
+            {
+                "type": "headline",
+                "text": "Boost Your Conversions"
+            },
+            {
+                "type": "paragraph",
+                "text": "LeadPages is built to convert. A/B testing, pop-ups, and powerful integrations with marketing tools help you maximize your lead generation and sales."
+            },
+            {
+                "type": "headline",
+                "text": "Growth-Driven Features"
+            },
+            {
+                "type": "paragraph",
+                "text": "From lead capture forms to thank you pages, LeadPages empowers you to build the entire funnel, driving traffic and growing your business with ease."
+            },
+            {
+                "type": "headline",
+                "text": "No Tech Skills Needed"
+            },
+            {
+                "type": "paragraph",
+                "text": "Intuitive interface and drag-and-drop functionality make LeadPages accessible to everyone, regardless of technical expertise. Get started today and unleash your landing page potential."
+            },
+            {
+                "type": "LpButtonReact",
+                "text": "Start Building"
+            }
+        ]
+    },
+    {
+        "section_name": "Testimonial 2",
+        "content": [
+            {
+                "type": "headline",
+                "text": "Effortless Landing Pages, Explosive Results"
+            },
+            {
+                "type": "paragraph",
+                "text": "“Building high-converting landing pages used to be a major headache.  Then we discovered LeadPages.  Now, creating beautiful, mobile-optimized pages is a breeze, and our conversion rates have skyrocketed. LeadPages has completely revolutionized our marketing strategy.”"
+            },
+            {
+                "type": "paragraph",
+                "text": "Sarah Jones, \nMarketing Manager at Growth Inc."
+            }
+        ]
+    },
+    {
+        "section_name": "FAQs",
+        "content": [
+            {
+                "type": "headline",
+                "text": "Got Landing Page Questions? We've Got Answers!"
+            },
+            {
+                "type": "headline",
+                "text": "Why Choose LeadPages for My Business?"
+            },
+            {
+                "type": "paragraph",
+                "text": "LeadPages isn't just a landing page builder, it's your conversion powerhouse.  Create high-converting landing pages, pop-up forms, and even complete websites—all designed to capture leads, boost sales, and grow your business."
+            },
+            {
+                "type": "headline",
+                "text": "How Easy is LeadPages to Use?"
+            },
+            {
+                "type": "paragraph",
+                "text": "LeadPages is designed for everyone, even if you're not a tech whiz.  Our drag-and-drop interface makes building beautiful, effective landing pages simple.  Get started in minutes, not hours."
+            },
+            {
+                "type": "headline",
+                "text": "What Kind of Landing Pages Can I Create?"
+            },
+            {
+                "type": "paragraph",
+                "text": "LeadPages empowers you to create a wide range of landing pages for any purpose: lead generation, product launches, webinars, sales funnels, and more.  The possibilities are endless."
+            },
+            {
+                "type": "headline",
+                "text": "What Support Does LeadPages Offer?"
+            },
+            {
+                "type": "paragraph",
+                "text": "We're here to help you every step of the way.  Enjoy access to our extensive knowledge base, helpful tutorials, and a responsive support team ready to answer your questions."
+            }
+        ]
+    },
+    {
+        "section_name": "CTA",
+        "content": [
+            {
+                "type": "headline",
+                "text": "Build Landing Pages That Convert Like Crazy - Start for Just $10"
+            },
+            {
+                "type": "paragraph",
+                "text": "Stop wasting time with complex website builders. LeadPages makes it easy to create stunning landing pages that drive results. Get started for just $10 and see the difference!"
+            },
+            {
+                "type": "LpButtonReact",
+                "text": "Start for $10"
+            }
+        ]
+    },
+    {
+        "section_name": "Footer",
+        "content": [
+            {
+                "type": "paragraph",
+                "text": "Build landing pages that convert with LeadPages."
+            },
+            {
+                "type": "paragraph",
+                "text": "© 2023 |"
+            },
+            {
+                "type": "paragraph",
+                "text": "Privacy Policy"
+            },
+            {
+                "type": "paragraph",
+                "text": "|  Made with"
+            },
+            {
+                "type": "paragraph",
+                "text": "LeadPages"
+            }
+        ]
+    }
+]
