@@ -1,7 +1,6 @@
-# LeadPages Text Manager
-##### AI/Python Take-home Test
+# Dynamic Text Forge
 
-LeadPages Text Manager is a tool to extract and replace text in JSON files for LeadPages. It provides functionalities to extract text from textboxes and buttons, keeping track of the text types, and replace the content of the extracted text with new context using AI prompts.
+##### Dynamic Text Forge is a Python-based tool for extracting and transforming text content from JSON representations of landing pages. It integrates AI prompts to dynamically replace existing text, enabling easy customization of landing page content.
 
 ## Features
 
@@ -85,8 +84,8 @@ LeadPages Text Manager
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/hmgtech/leadpages_text_manager.git
-    cd leadpages_text_manager
+    git clone https://github.com/hmgtech/DynamicTextForge
+    cd DynamicTextForge
     ```
 
 2. Create a virtual environment and activate it:
