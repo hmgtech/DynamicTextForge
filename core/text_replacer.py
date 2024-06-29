@@ -64,21 +64,24 @@ class TextReplacer:
 
         try:
             if isinstance(data, dict):
-                
+                # Check if the current dictionary contains a 'text' key
                 if 'text' in data:
                     text = data['text'].strip()
+                     # If the text exists in the mapping, replace it
                     if text in text_mapping:
                         data['text'] = text_mapping[text]
 
                 if 'content' in data and isinstance(data['content'], list):
+                    # Recursively process each item in the 'content' list
                     for item in data['content']:
                         self.replace_text_in_original(item, text_mapping)
                 
-                for key, value in data.items():
-                    if isinstance(value, (dict, list)):
-                        self.replace_text_in_original(value, text_mapping)
+                # Recursively process all values in the dictionary
+                for value in data.values():
+                    self.replace_text_in_original(value, text_mapping)
             
             elif isinstance(data, list):
+                # If data is a list, recursively process each item
                 for item in data:
                     self.replace_text_in_original(item, text_mapping)
 
