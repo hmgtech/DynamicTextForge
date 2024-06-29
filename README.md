@@ -5,26 +5,30 @@ LeadPages Text Manager is a tool to extract and replace text in JSON files for L
 
 ## Features
 
-- [Todo] Extract text from JSON data while keeping track of text types (e.g., headlines, paragraphs, buttons).
-- [Todo] Replace text content with new context. 
+- Extract text from JSON data while keeping track of text types (e.g., headlines, paragraphs, buttons).
+- Replace text content with new context. 
 
 ## Project Structure
 
 ```sh
 LeadPages Text Manager
-├── core
-│ ├── init.py
-│ ├── text_extractor.py
-│ ├── text_replacer.py
-├── input
-│ ├── test.json
-├── venv
+│
+├── core/
+│   ├── generative_ai.py
+│   ├── text_extractor.py
+│   └── text_replacer.py
+├── input/
+│   └── test.json
+└── output/
+│   └── extracted_text.json
+│   └── replaced_text.json
 ├── .gitignore
+├── config.py
 ├── main.py
 ├── README.md
 ├── requirements.txt
 ├── setup.py
-
+├── utils.py
 ```
 
 ## Installation
