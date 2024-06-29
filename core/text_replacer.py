@@ -28,12 +28,13 @@ class TextReplacer:
                 section_content = section["content"]
 
                 # Create prompt with existing section content and LeadPages context
-                prompt_text = f"Look at the current {section_name} section:\n"
+                prompt_text = f"Examine the current {section_name} section:\n"
                 prompt_text += json.dumps(section, indent=4) + "\n"
-                prompt_text += f"It is designed for ScheduleMaster, a digital scheduler to help someone schedule tasks.\n"
-                prompt_text += f"Now, replace the text with LeadPages content: LeadPages, a landing page builder to help you build landing pages for your business.\n"
-                prompt_text += f"Keep format same section name, just replace the text. Please match same number of content items.\n"
-                prompt_text += f"Please come up with innovative ideas and attractive statements. In response, just give me best json object."
+                prompt_text += "It is tailored for ScheduleMaster, a digital scheduler for task management.\n"
+                prompt_text += "Now, transform this text to be suitable for LeadPages:\n"
+                prompt_text += "'With Leadpages, you can build landing pages, deliver lead magnets, track your analytics, manage your leads, sell your products and services, and more.'\n"
+                prompt_text += "Maintain the original format of the section but replace the text with equivalent content for LeadPages. Ensure the number of content items remains the same. Please create innovative and appealing statements. Provide the result as a JSON object.\n"
+
 
                 # Generate new text with Generative AI
                 print(f"Generating content for {section_name} section.")
@@ -49,28 +50,39 @@ class TextReplacer:
 
         return processed_json_data
     
-    def replace_text_in_original(self, original, text_mapping):
+    def replace_text_in_original(self, data, text_mapping):
         """
-        Recursively replaces text in a nested dictionary or list structure.
+        Replaces text in the nested data structure based on a given text mapping.
 
         Args:
-        - original (dict or list): The original data structure where text replacements will occur.
+        - data (dict or list): The nested data structure to replace text in.
         - text_mapping (dict): A dictionary mapping original text to replacement text.
 
         Returns:
-        - original (dict or list): The modified data structure with text replacements.
+        - data (dict or list): The data structure with replaced text.
         """
+
         try:
-            if isinstance(original, dict):
-                if 'text' in original and original['text'] in text_mapping:
-                    original['text'] = text_mapping[original['text']]
-                for key, value in original.items():
+            if isinstance(data, dict):
+                
+                if 'text' in data:
+                    text = data['text'].strip()
+                    if text in text_mapping:
+                        data['text'] = text_mapping[text]
+
+                if 'content' in data and isinstance(data['content'], list):
+                    for item in data['content']:
+                        self.replace_text_in_original(item, text_mapping)
+                
+                for key, value in data.items():
                     if isinstance(value, (dict, list)):
                         self.replace_text_in_original(value, text_mapping)
-            elif isinstance(original, list):
-                for item in original:
+            
+            elif isinstance(data, list):
+                for item in data:
                     self.replace_text_in_original(item, text_mapping)
-        except Exception as e:
-            print(f"Error: An error occurred during text replacement: {e}")
 
-        return original
+            return data
+        except Exception as e:
+            print(f"An error occurred during text replacement: {e}")
+            return data
