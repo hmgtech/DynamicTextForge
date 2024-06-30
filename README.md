@@ -1,7 +1,6 @@
-# LeadPages Text Manager
-##### AI/Python Take-home Test
+# Dynamic Text Forge
 
-LeadPages Text Manager is a tool to extract and replace text in JSON files for LeadPages. It provides functionalities to extract text from textboxes and buttons, keeping track of the text types, and replace the content of the extracted text with new context using AI prompts.
+##### Dynamic Text Forge is a Python-based tool for extracting and transforming text content from JSON representations of landing pages. It integrates AI prompts to dynamically replace existing text, enabling easy customization of landing page content.
 
 ## Features
 
@@ -11,7 +10,7 @@ LeadPages Text Manager is a tool to extract and replace text in JSON files for L
 ## Project Structure
 
 ```sh
-LeadPages Text Manager
+DynamicTextForge
 │
 ├── core/
 │   └── __init__.py
@@ -24,6 +23,9 @@ LeadPages Text Manager
 │   └── extracted_text.json
 │   └── replaced_text_checkpoint.json
 │   └── replaced_text_with_original.json
+└── test/
+│   └── text_extractor_test.py
+│   └── text_replacer_test.py
 ├── .env
 ├── .gitignore
 ├── config.py
@@ -33,60 +35,107 @@ LeadPages Text Manager
 ├── setup.py
 ├── utils.py
 ```
-## Approach
-### Text Extraction Task
-- Input: `data` (dict or list), optional `section_name`, `results` list, `current_text_type`.
-- Output: `results` (list of dictionaries with section info and extracted text).
-1. Recursively traverse `data`.
-2. For each dictionary (`data`):
-   - Checked for new section based on 'level' and 'name'.
-   - Update `current_text_type` if `'type'` matches `['LpButtonReact', 'LpTextReact', 'paragraph', 'headline']`.
-   - Extract 'text', add to `results` with section information, ensure uniqueness using `extracted_set`.
-   - Recursively processed 'content' if list.
-3. For each list (`data`):
-   - Recursively processed each item.
+# My Approach
 
-#### Append Text to Section Method
-- **Input**: `results`, `section_name`, `text_type`, `text`.
-- **Functionality**: Add `text` with `text_type` to appropriate `section_name` in `results`.
-  - If `section_name` exists, add content.
-  - If `section_name` does not exist, add to "Unsectioned".
+## Text Extraction Task
 
-### Text Replacement Task
-- Input: `extracted_text`, `original_json_data`.
-- Output: Save new json file with original format with new context
-#### Overview Steps
-- Call `replace_text_with_generative_ai` with `extracted_text` and `json_data`.
-- Save the generated `replaced_text` to file (`REPLACED_WITH_ORIGINAL_JSON_PATH`).
-- Print a confirmation message indicating where the updated JSON has been saved.
+### Input
+- `data` (dict or list)
+- Optional `section_name`
+- `results` list
+- `current_text_type`
 
-#### Replaced Text with Generative AI
-- Ensure `GENAI_API_KEY` is set; an error will be raised if it's not.
-- Initialized `GenerativeAI` with Gemini API key and `GENAI_MODEL_NAME`.
-- Configure the AI model settings.
-- Initialized `TextReplacer` with `extracted_text` and the configured AI model.
-- Used `text_replacer.rephrase_section()` to replace text based on AI-generated content.
-- Saved the resulting `replaced_text` to file (`REPLACED_TEXT_PATH`).
-- Created a mapping between original and replaced text using `create_text_mapping` with `extracted_text` and `replaced_text`.
-- Returned the updated `original_json` after replacing text using `text_mapping`.
+### Output
+- `results` (list of dictionaries with section info and extracted text)
 
-#### Create Text Mapping
-- Initialized an empty `text_mapping` dictionary.
-- Iterate through `extracted_json` and `replaced_json` sections to map original text to its replacement.
-- Returned the `text_mapping` dictionary once mapping is complete.
+### Algorithm
 
-#### Replace Text in Original JSON
-- Recursively traverse the `original` JSON structure.
-- Replaced text where a dictionary element contains a `'text'` key matching an entry in `text_mapping`.
-- Handled nested dictionaries and lists by recursively calling itself.
-- Returned the updated `original` JSON structure.
+1. **Recursively Traverse `data`**:
+    - If `data` is a dictionary:
+        1. **New Section Detection**:
+            - Check for new section based on 'level' and 'name'.
+        2. **Update `current_text_type`**:
+            - If `'type'` matches `['LpButtonReact', 'LpTextReact', 'paragraph', 'headline']`, update `current_text_type`.
+        3. **Extract Text**:
+            - Extract 'text' and add to `results` with section information.
+            - Ensure uniqueness using `extracted_set`.
+        4. **Process 'content'**:
+            - If 'content' is a list, recursively process each item.
+    - If `data` is a list:
+        1. Recursively process each item.
+
+2. **Append Text to Section Method**:
+    - **Input**: `results`, `section_name`, `text_type`, `text`
+    - **Functionality**:
+        - Add `text` with `text_type` to the appropriate `section_name` in `results`.
+        - If `section_name` exists, add content.
+        - If `section_name` does not exist, add to "Unsectioned".
+
+---
+
+## Text Replacement Task
+
+### Input
+- `extracted_text`
+- `original_json_data`
+
+### Output
+- Save new JSON file with original format and new context
+
+### Algorithm
+
+1. **Overview**:
+    - Call `replace_text_with_generative_ai` with `extracted_text` and `json_data`.
+    - Save the generated `replaced_text` to file (`REPLACED_WITH_ORIGINAL_JSON_PATH`).
+    - Print a confirmation message indicating where the updated JSON has been saved.
+
+2. **Replace Text with Generative AI**:
+    1. **Setup**:
+        - Ensure `GENAI_API_KEY` is set; raise an error if not.
+        - Initialize `GenerativeAI` with Gemini API key and `GENAI_MODEL_NAME`.
+        - Configure the AI model settings.
+    2. **Text Replacement**:
+        - Initialize `TextReplacer` with `extracted_text` and the configured AI model.
+        - Use `text_replacer.rephrase_section()` to replace text based on AI-generated content.
+        - Save the resulting `replaced_text` to file (`REPLACED_TEXT_PATH`).
+    3. **Mapping and Replacement (as shown in Step 3 and 4)**:
+        - Create a mapping between the original and replaced text using `create_text_mapping` with `extracted_text` and `replaced_text`.
+        - Return the updated `original_json` after replacing text using `text_mapping`.
+
+3. **Create Text Mapping**:
+    1. **Initialization**:
+        - Initialize an empty `text_mapping` dictionary.
+    2. **Mapping**:
+        - Iterate through `extracted_json` and `replaced_json` sections to map original text to its replacement.
+    3. **Completion**:
+        - Return the `text_mapping` dictionary once mapping is complete.
+
+4. **Replace Text in Original JSON**:
+    1. **Recursively Traverse**:
+        - Traverse the `original` JSON structure.
+    2. **Replacement**:
+        - Replace text where a dictionary element contains a `'text'` key matching an entry in `text_mapping`.
+    3. **Handling Nesting**:
+        - Handle nested dictionaries and lists by recursively calling itself.
+    4. **Return**:
+        - Return the updated `original` JSON structure.
+
+## Prerequisites
+
+- Python 3.7 or higher
+- Required Python libraries:
+  - `requests`
+  - `json`
+  - `google.generativeai`
+- A valid Generative AI API key (`GENAI_API_KEY`)
+- Environment file (`.env`) for storing configuration
 
 ## Installation
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/hmgtech/leadpages_text_manager.git
-    cd leadpages_text_manager
+    git clone https://github.com/hmgtech/DynamicTextForge
+    cd DynamicTextForge
     ```
 
 2. Create a virtual environment and activate it:
@@ -108,7 +157,10 @@ LeadPages Text Manager
     ```sh
     GOOGLE_GEMINI_API_KEY=add_gemini_api_key_here
     ```
-
+5. Install DynamicTextForge package in editable mode for development using `setup.py` file:
+    ```sh
+    pip install -e .
+    ```
 ## Usage
 
 1. Place input JSON file in the `input` directory. The file should be named `test.json` or adjust the path in `main.py` accordingly.
@@ -119,6 +171,13 @@ LeadPages Text Manager
     ```
 
 3. The script will print the extracted text and the replaced text to the console.
+
+## Unit Tests
+
+1. Run all unit tests using `unittest`:
+    ```sh
+    python -m unittest discover -s tests
+    ```
 
 ## Output
 
@@ -137,3 +196,17 @@ This project is licensed under the MIT License.
 
 - **Hiteshkumar Gupta** - [hiteshgupta2198@gmail.com](hiteshgupta2198@gmail.com)
 - GitHub: [hmgtech](https://github.com/hmgtech)
+
+## Future Scope for Improvements
+
+1. **Develop In-House Language Model (LLM)**:
+   - Build our own language model instead of relying on third-party services. This gives us more control over content quality and customization.
+
+2. **Enhance Content Generation with Images**:
+   - Expand content generation capabilities to include creating images tailored to the generated text. This enhances visual appeal and engagement.
+
+3. **Create User Interface (UI)**:
+   - Develop a user-friendly interface for managing content and image generation tasks. It will simplify input, settings adjustment, and visualizing outputs.
+
+4. **Migration to Cloud Infrastructure (e.g., AWS)**:
+   - Move our entire generation process to a cloud platform like AWS for scalability, reliability, and cost efficiency.

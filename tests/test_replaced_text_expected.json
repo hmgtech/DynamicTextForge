@@ -1,0 +1,686 @@
+{
+    "boxes": [
+        {
+            "boxes": [
+                {
+                    "boxes": [
+                        {
+                            "boxes": [
+                                {
+                                    "boxes": [
+                                        {
+                                            "boxes": [
+                                                {
+                                                    "boxes": [
+                                                        {
+                                                            "boxes": [
+                                                                {
+                                                                    "compositeGuid": "9ed85c0d-f18f-ac75-5c4f-a8fcbfa7232c",
+                                                                    "guid": "22bf8eef-fe82-335e-e25e-ef3736dcf4c7",
+                                                                    "isComposite": false,
+                                                                    "level": "widget",
+                                                                    "options": {
+                                                                        "borderRadius": 12,
+                                                                        "cornerStyle": "square",
+                                                                        "image": {
+                                                                            "altText": "",
+                                                                            "assetID": "JREcReoTWJ2EYv66Ygqzjd",
+                                                                            "contentType": "image/png",
+                                                                            "fileSize": 28041,
+                                                                            "naturalHeight": 346,
+                                                                            "naturalWidth": 1177,
+                                                                            "src": "https://lh3.googleusercontent.com/w6F8L024k6k-L-aXxf1QNGUJDN0rT00vQLACqjg2iNWQkg_vzg3HO-c5g-zPaLCQAQI6bbxZGDYHL6LntLTcss0=w1024"
+                                                                        },
+                                                                        "imageAlign": "left",
+                                                                        "lazyLoad": false,
+                                                                        "linkId": "0a9bbc7a-1748-8887-de44-dc875799c593",
+                                                                        "maxWidth": "230",
+                                                                        "maxWidthEnabled": true,
+                                                                        "width": 100
+                                                                    },
+                                                                    "showToolbar": true,
+                                                                    "type": "LpImageReact",
+                                                                    "width": 12
+                                                                }
+                                                            ],
+                                                            "guid": "713c98ca-8f6c-a9a1-4c53-9e815baae2b4",
+                                                            "level": "widget-row",
+                                                            "width": 12
+                                                        }
+                                                    ],
+                                                    "guid": "cf74790e-5b53-1df2-9a1b-1cbf038eebe2",
+                                                    "level": "widget-column",
+                                                    "width": 12
+                                                }
+                                            ],
+                                            "guid": "9ed85c0d-f18f-ac75-5c4f-a8fcbfa7232c",
+                                            "level": "composite",
+                                            "width": 12
+                                        }
+                                    ],
+                                    "guid": "49326c01-2428-ae86-6ca4-de486e1812cf",
+                                    "level": "row",
+                                    "width": 12
+                                },
+                                {
+                                    "boxes": [
+                                        {
+                                            "boxes": [
+                                                {
+                                                    "boxes": [
+                                                        {
+                                                            "boxes": [
+                                                                {
+                                                                    "compositeGuid": "0a7a203b-177a-9b14-f521-074cf1eaba37",
+                                                                    "guid": "7b17ca13-c7c4-b2b2-5c88-a642309ed566",
+                                                                    "isComposite": false,
+                                                                    "level": "widget",
+                                                                    "options": {
+                                                                        "minHeight": 48
+                                                                    },
+                                                                    "showToolbar": false,
+                                                                    "type": "LpSpaceReact",
+                                                                    "width": 12
+                                                                }
+                                                            ],
+                                                            "guid": "7f624f28-8a9f-8f81-8d02-ffbb6b5613bc",
+                                                            "level": "widget-row",
+                                                            "width": 12
+                                                        }
+                                                    ],
+                                                    "guid": "62f33231-7672-975f-c68d-108a4a0d369e",
+                                                    "level": "widget-column",
+                                                    "width": 12
+                                                }
+                                            ],
+                                            "guid": "0a7a203b-177a-9b14-f521-074cf1eaba37",
+                                            "level": "composite",
+                                            "width": 12
+                                        }
+                                    ],
+                                    "guid": "396e1cb2-d53b-b7ea-9f45-0195abd4db5d",
+                                    "level": "row",
+                                    "width": 12
+                                },
+                                {
+                                    "boxes": [
+                                        {
+                                            "boxes": [
+                                                {
+                                                    "boxes": [
+                                                        {
+                                                            "boxes": [
+                                                                {
+                                                                    "compositeGuid": "104707c5-533d-4582-b2ec-3ebef58dc4df",
+                                                                    "guid": "89f94a98-bd84-11b9-b14e-e68cd82c2a84",
+                                                                    "isComposite": false,
+                                                                    "level": "widget",
+                                                                    "options": {
+                                                                        "doc": {
+                                                                            "content": [
+                                                                                {
+                                                                                    "attrs": {
+                                                                                        "align": "left",
+                                                                                        "fontScale": "",
+                                                                                        "gutterBottom": "",
+                                                                                        "level": "headline",
+                                                                                        "lineHeight": ""
+                                                                                    },
+                                                                                    "content": [
+                                                                                        {
+                                                                                            "text": "Build High-Converting Landing Pages, Effortlessly.",
+                                                                                            "type": "text"
+                                                                                        }
+                                                                                    ],
+                                                                                    "type": "headline"
+                                                                                }
+                                                                            ],
+                                                                            "type": "doc"
+                                                                        }
+                                                                    },
+                                                                    "showToolbar": false,
+                                                                    "type": "LpTextReact",
+                                                                    "width": 12
+                                                                }
+                                                            ],
+                                                            "guid": "b0722a42-c443-7112-2e64-13225566c32b",
+                                                            "level": "widget-row",
+                                                            "width": 12
+                                                        }
+                                                    ],
+                                                    "guid": "ebe6c3a7-7afd-7294-88d5-1666d1e786d1",
+                                                    "level": "widget-column",
+                                                    "width": 12
+                                                }
+                                            ],
+                                            "guid": "104707c5-533d-4582-b2ec-3ebef58dc4df",
+                                            "level": "composite",
+                                            "width": 12
+                                        }
+                                    ],
+                                    "guid": "45ec9075-4c89-6489-fc1f-a80c4f6758f3",
+                                    "level": "row",
+                                    "width": 12
+                                },
+                                {
+                                    "boxes": [
+                                        {
+                                            "boxes": [
+                                                {
+                                                    "boxes": [
+                                                        {
+                                                            "boxes": [
+                                                                {
+                                                                    "compositeGuid": "eddeabfa-dee2-f24a-5d0e-eae3fdb10018",
+                                                                    "guid": "20466dfb-6aae-9453-08fe-01cad88977f7",
+                                                                    "isComposite": false,
+                                                                    "level": "widget",
+                                                                    "options": {
+                                                                        "doc": {
+                                                                            "content": [
+                                                                                {
+                                                                                    "attrs": {
+                                                                                        "align": "left",
+                                                                                        "fontScale": 6,
+                                                                                        "gutterBottom": "",
+                                                                                        "lineHeight": 8
+                                                                                    },
+                                                                                    "content": [
+                                                                                        {
+                                                                                            "text": "Leadpages empowers you to create stunning landing pages, capture leads, track results, and launch your business to new heights.  Get started today and see the difference!",
+                                                                                            "type": "text"
+                                                                                        }
+                                                                                    ],
+                                                                                    "type": "paragraph"
+                                                                                }
+                                                                            ],
+                                                                            "type": "doc"
+                                                                        }
+                                                                    },
+                                                                    "showToolbar": false,
+                                                                    "type": "LpTextReact",
+                                                                    "width": 12
+                                                                }
+                                                            ],
+                                                            "guid": "067e0649-90c4-2276-b9a8-e9f74da867a7",
+                                                            "level": "widget-row",
+                                                            "width": 12
+                                                        }
+                                                    ],
+                                                    "guid": "e798fad2-28a4-870c-b61c-48a40342fbf9",
+                                                    "level": "widget-column",
+                                                    "width": 12
+                                                }
+                                            ],
+                                            "guid": "eddeabfa-dee2-f24a-5d0e-eae3fdb10018",
+                                            "level": "composite",
+                                            "width": 12
+                                        }
+                                    ],
+                                    "guid": "e4f7fb55-85c4-9779-dfe8-d01634edbc5b",
+                                    "level": "row",
+                                    "width": 12
+                                },
+                                {
+                                    "boxes": [
+                                        {
+                                            "boxes": [
+                                                {
+                                                    "boxes": [
+                                                        {
+                                                            "boxes": [
+                                                                {
+                                                                    "compositeGuid": "e27ab935-9df1-1a24-58c7-ac51bede2c71",
+                                                                    "guid": "de718ec1-e6be-ebde-0402-182408d3ebe1",
+                                                                    "isComposite": false,
+                                                                    "level": "widget",
+                                                                    "options": {
+                                                                        "borderRadius": 3,
+                                                                        "buttonSize": "Medium",
+                                                                        "buttonStyle": "Flat",
+                                                                        "cornerStyle": "circular",
+                                                                        "fontFamily": "Poppins",
+                                                                        "fontSize": 7,
+                                                                        "isBlock": true,
+                                                                        "isBold": true,
+                                                                        "isItalic": false,
+                                                                        "isStrikethrough": false,
+                                                                        "isUnderline": false,
+                                                                        "justify": "center",
+                                                                        "lineHeight": 8,
+                                                                        "linkId": "8477e164-b63e-5649-32ed-b2ca92a74c9f",
+                                                                        "primaryColor": "rgb(74, 11, 255)",
+                                                                        "secondaryColor": "rgb(255, 255, 255)",
+                                                                        "text": "Try Leadpages Now",
+                                                                        "variant": "primary"
+                                                                    },
+                                                                    "showToolbar": true,
+                                                                    "type": "LpButtonReact",
+                                                                    "width": 12
+                                                                }
+                                                            ],
+                                                            "guid": "6c89bde3-fd84-9852-8468-de94e839e2dc",
+                                                            "level": "widget-row",
+                                                            "width": 12
+                                                        }
+                                                    ],
+                                                    "guid": "e661da3e-e0c3-3ae8-7af7-2ebbe604b87d",
+                                                    "level": "widget-column",
+                                                    "width": 12
+                                                }
+                                            ],
+                                            "guid": "e27ab935-9df1-1a24-58c7-ac51bede2c71",
+                                            "level": "composite",
+                                            "width": 8
+                                        },
+                                        {
+                                            "boxes": [
+                                                {
+                                                    "boxes": [
+                                                        {
+                                                            "boxes": [
+                                                                {
+                                                                    "compositeGuid": "9d2ecd37-2b32-ec29-736f-03d66747323c",
+                                                                    "guid": "ca53bf8e-b49e-5903-79ca-54d15fb3bba5",
+                                                                    "isComposite": false,
+                                                                    "level": "widget",
+                                                                    "options": {
+                                                                        "minHeight": 48
+                                                                    },
+                                                                    "showToolbar": false,
+                                                                    "type": "LpSpaceReact",
+                                                                    "width": 12
+                                                                }
+                                                            ],
+                                                            "guid": "cf4c320a-d01e-9474-d089-d7e13c7e9ebd",
+                                                            "level": "widget-row",
+                                                            "width": 12
+                                                        }
+                                                    ],
+                                                    "guid": "f3cc97db-54e8-482d-f0a1-90e80d6ad0d5",
+                                                    "level": "widget-column",
+                                                    "width": 12
+                                                }
+                                            ],
+                                            "guid": "9d2ecd37-2b32-ec29-736f-03d66747323c",
+                                            "level": "composite",
+                                            "width": 4
+                                        }
+                                    ],
+                                    "guid": "3673980b-51d8-56a4-4992-09b1e885f7a8",
+                                    "level": "row",
+                                    "width": 12
+                                }
+                            ],
+                            "guid": "8fcfb418-e217-5c8d-b6b1-9d4f1109fc32",
+                            "level": "column",
+                            "locked": true,
+                            "name": "Column 1",
+                            "options": {
+                                "arrow": "none",
+                                "backgroundColor": "rgba(0, 0, 0, 0)",
+                                "backgroundColorOverlay": "rgba(0, 0, 0, 0)",
+                                "backgroundImage": {
+                                    "assetID": "",
+                                    "filename": "",
+                                    "url": ""
+                                },
+                                "bgSetting": {
+                                    "position": "center",
+                                    "repeat": "no-repeat",
+                                    "sizing": "cover"
+                                },
+                                "margin": {
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "right": "0",
+                                    "top": "0"
+                                },
+                                "padding": {
+                                    "bottom": "1",
+                                    "left": "3",
+                                    "right": "3",
+                                    "top": "1"
+                                }
+                            },
+                            "width": 7
+                        },
+                        {
+                            "boxes": [
+                                {
+                                    "boxes": [
+                                        {
+                                            "boxes": [
+                                                {
+                                                    "boxes": [
+                                                        {
+                                                            "boxes": [
+                                                                {
+                                                                    "compositeGuid": "425d7b51-620b-bed9-1fdb-328a25f24901",
+                                                                    "guid": "d10a7cbc-9c2a-7785-059b-0ee5cdfe6dea",
+                                                                    "isComposite": false,
+                                                                    "level": "widget",
+                                                                    "options": {
+                                                                        "borderRadius": 12,
+                                                                        "cornerStyle": "square",
+                                                                        "image": {
+                                                                            "altText": "",
+                                                                            "assetID": "ENN7xnettdS4iamvCDnyR4",
+                                                                            "contentType": "image/png",
+                                                                            "fileSize": 222908,
+                                                                            "naturalHeight": 1682,
+                                                                            "naturalWidth": 934,
+                                                                            "src": "https://lh3.googleusercontent.com/e6rRi61HzkOPMfNEb1ZmLxagr2cPVhTPdgh1cERUEq8NEhXuQ7Mm8xN6mvYqCW6-krZJ4n9sRw_r2DvEpvHPrQ=w1024"
+                                                                        },
+                                                                        "imageAlign": "center",
+                                                                        "lazyLoad": false,
+                                                                        "linkId": "6c7fa928-81ea-32f9-03ac-9c0bd5eafc08",
+                                                                        "maxWidth": "350",
+                                                                        "maxWidthEnabled": true,
+                                                                        "width": 100
+                                                                    },
+                                                                    "showToolbar": true,
+                                                                    "type": "LpImageReact",
+                                                                    "width": 12
+                                                                }
+                                                            ],
+                                                            "guid": "870fcdac-7fb2-0899-0d3f-5672fcb59e74",
+                                                            "level": "widget-row",
+                                                            "width": 12
+                                                        }
+                                                    ],
+                                                    "guid": "6df3a832-8b0b-96a6-0fd4-0b92b6cc025f",
+                                                    "level": "widget-column",
+                                                    "width": 12
+                                                }
+                                            ],
+                                            "guid": "425d7b51-620b-bed9-1fdb-328a25f24901",
+                                            "level": "composite",
+                                            "width": 12
+                                        }
+                                    ],
+                                    "guid": "77c4bfa6-6723-411c-858a-9cdf9b14d10b",
+                                    "level": "row",
+                                    "width": 12
+                                }
+                            ],
+                            "guid": "e7b5d616-611f-710f-e32c-9442d4a72a2d",
+                            "level": "column",
+                            "locked": true,
+                            "name": "Column 2",
+                            "options": {
+                                "arrow": "none",
+                                "backgroundColor": "rgba(0, 0, 0, 0)",
+                                "backgroundColorOverlay": "rgba(0, 0, 0, 0)",
+                                "backgroundImage": {
+                                    "assetID": "",
+                                    "filename": "",
+                                    "url": ""
+                                },
+                                "bgSetting": {
+                                    "position": "center",
+                                    "repeat": "no-repeat",
+                                    "sizing": "cover"
+                                },
+                                "margin": {
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "right": "0",
+                                    "top": "5"
+                                },
+                                "padding": {
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "right": "0",
+                                    "top": "0"
+                                }
+                            },
+                            "width": 5
+                        }
+                    ],
+                    "guid": "5e96537b-5647-cf1b-d567-b7698a759c93",
+                    "level": "layout",
+                    "name": "Row 1"
+                }
+            ],
+            "guid": "5f334c1f-b89c-b78b-8b14-c7e8cd49b774",
+            "level": "section",
+            "locked": true,
+            "name": "Hero",
+            "options": {
+                "arrow": "none",
+                "backgroundColor": "rgba(0, 0, 0, 0)",
+                "backgroundColorOverlay": "rgba(0, 0, 0, 0)",
+                "backgroundImage": {
+                    "assetID": "zr7k9MPnn7bUbYjHnCd6z2",
+                    "filename": "bg2.png",
+                    "url": "https://lh3.googleusercontent.com/dfyevIrDkeShv6OPn-OWT3OXjIPAItIgsfj2diQuH2Wd7dnS4VVzZyo1ZuhJ-rp5gXgvcl3TFZmPWH-JYy07-wU=w1920"
+                },
+                "bgSetting": {
+                    "position": "bottom",
+                    "repeat": "no-repeat",
+                    "sizing": "cover"
+                },
+                "delayDisplay": false,
+                "delayDisplaySeconds": 60,
+                "displayVisibility": true,
+                "heroAlignment": "center",
+                "heroSize": "90",
+                "padding": {
+                    "bottom": "6",
+                    "left": "1",
+                    "right": "1",
+                    "top": "1"
+                },
+                "responsiveVisibility": {
+                    "desktop": false,
+                    "mobile": false,
+                    "tablet": false
+                }
+            }
+        }
+    ],
+    "colorHistory": [
+        "rgb(255, 255, 255)",
+        "rgb(0, 0, 0)",
+        "rgb(238, 242, 245)",
+        "rgba(255, 255, 255, 0.61)",
+        "rgba(238, 242, 245, 1)",
+        "rgb(74, 11, 255)",
+        "rgba(255, 255, 255, 1)",
+        "rgba(224, 224, 224, 0.37)",
+        "rgba(0, 0, 0, 0)",
+        "rgb(30, 209, 173)"
+    ],
+    "editors": {
+        "Few8myV5fpyCARmKLDLTsR": {
+            "startedEditingAt": 1716826383110
+        }
+    },
+    "guid": "1b54b83b-ca95-a574-a906-0428f4983059",
+    "level": "page",
+    "links": {
+        "0a9bbc7a-1748-8887-de44-dc875799c593": {
+            "entityId": "",
+            "id": "0a9bbc7a-1748-8887-de44-dc875799c593",
+            "type": "remain",
+            "widgetId": "22bf8eef-fe82-335e-e25e-ef3736dcf4c7"
+        },
+        "116389c5-932c-65f9-e0e6-bc74d911f545": {
+            "entityId": "",
+            "id": "116389c5-932c-65f9-e0e6-bc74d911f545",
+            "type": "remain",
+            "widgetId": "ca2532ab-a7ac-6608-ce73-f04d3e647095"
+        },
+        "13f6e1e3-7f67-d074-185e-4bbca59a998c": {
+            "entityId": "",
+            "id": "13f6e1e3-7f67-d074-185e-4bbca59a998c",
+            "type": "remain",
+            "widgetId": "e78e9a4e-a2d8-7136-df07-3e1ff59213b9"
+        },
+        "168742e8-6077-ea97-371b-7b217b0dbb7c": {
+            "entityId": "",
+            "id": "168742e8-6077-ea97-371b-7b217b0dbb7c",
+            "type": "remain",
+            "widgetId": "2affd5ec-711e-f928-20ff-d038000f459b"
+        },
+        "55c1688f-f872-2917-99d3-cbfd9e0fcaac": {
+            "id": "55c1688f-f872-2917-99d3-cbfd9e0fcaac",
+            "type": "external",
+            "url": "https://www.leadpages.com/product?utm_source=Leadpages&utm_medium=customerpages&utm_campaign=footer",
+            "widgetId": "52e4146b-ef9b-a19f-0fda-4bf87c22f3c8"
+        },
+        "6c7fa928-81ea-32f9-03ac-9c0bd5eafc08": {
+            "entityId": "",
+            "id": "6c7fa928-81ea-32f9-03ac-9c0bd5eafc08",
+            "type": "remain",
+            "widgetId": "d10a7cbc-9c2a-7785-059b-0ee5cdfe6dea"
+        },
+        "716325b4-2435-baf4-71d2-3479776ab7f7": {
+            "id": "716325b4-2435-baf4-71d2-3479776ab7f7",
+            "type": "external",
+            "url": "#",
+            "widgetId": "52e4146b-ef9b-a19f-0fda-4bf87c22f3c8"
+        },
+        "8477e164-b63e-5649-32ed-b2ca92a74c9f": {
+            "entityId": "LREQEwTJyQRbQVZQDXtm8f",
+            "id": "8477e164-b63e-5649-32ed-b2ca92a74c9f",
+            "newWindow": false,
+            "noFollow": false,
+            "type": "leadbox",
+            "url": "LB-LREQEwTJyQRbQVZQDXtm8f",
+            "widgetId": "de718ec1-e6be-ebde-0402-182408d3ebe1"
+        },
+        "8613e816-18f6-2f4a-921b-a8daf8b2305d": {
+            "entityId": "",
+            "id": "8613e816-18f6-2f4a-921b-a8daf8b2305d",
+            "type": "remain",
+            "widgetId": "2d9adddf-4e29-8c19-6caa-94f459db30fa"
+        },
+        "8f1996a5-1813-a62f-c597-4c49118e65de": {
+            "entityId": "LREQEwTJyQRbQVZQDXtm8f",
+            "id": "8f1996a5-1813-a62f-c597-4c49118e65de",
+            "newWindow": false,
+            "noFollow": false,
+            "type": "leadbox",
+            "url": "LB-LREQEwTJyQRbQVZQDXtm8f",
+            "widgetId": "3958d3cf-707f-a7d5-5fc6-882f1e7e1aae"
+        },
+        "ded9f377-53fa-21f7-7674-78fc305eb46f": {
+            "entityId": "",
+            "id": "ded9f377-53fa-21f7-7674-78fc305eb46f",
+            "type": "remain",
+            "widgetId": "e29318ea-acbd-35aa-1115-b2f80893c83f"
+        }
+    },
+    "pagesettings": {
+        "backgroundColor": "rgba(255, 255, 255, 1)",
+        "backgroundColorOverlay": "rgba(255, 255, 255, 0)",
+        "bgSetting": {
+            "position": "center",
+            "repeat": "no-repeat",
+            "sizing": "cover"
+        },
+        "globalButtons": {
+            "primary": {
+                "borderRadius": 3,
+                "buttonSize": "Medium",
+                "buttonStyle": "Flat",
+                "cornerStyle": "circular",
+                "fontFamily": "Poppins",
+                "fontSize": 7,
+                "isBlock": true,
+                "isBold": true,
+                "isItalic": false,
+                "isStrikethrough": false,
+                "isUnderline": false,
+                "justify": "center",
+                "lineHeight": 8,
+                "primaryColor": "rgb(74, 11, 255)",
+                "secondaryColor": "rgb(255, 255, 255)",
+                "text": "Sign Up",
+                "variant": "primary"
+            },
+            "secondary": {
+                "borderRadius": 3,
+                "buttonSize": "Medium",
+                "buttonStyle": "Line",
+                "cornerStyle": "circular",
+                "fontFamily": "Poppins",
+                "fontSize": 7,
+                "isBlock": true,
+                "isBold": true,
+                "isItalic": false,
+                "isStrikethrough": false,
+                "isUnderline": false,
+                "justify": "center",
+                "lineHeight": 8,
+                "primaryColor": "rgb(74, 11, 255)",
+                "secondaryColor": "rgb(255, 255, 255)",
+                "text": "Sign Up",
+                "variant": "secondary"
+            }
+        },
+        "globalFonts": {
+            "headline": {
+                "color": "rgba(0, 0, 0, 1)",
+                "fontFamily": "Karla",
+                "fontScale": 11,
+                "gutterBottom": 1,
+                "isBold": true,
+                "isItalic": false,
+                "lineHeight": 4
+            },
+            "paragraph": {
+                "color": "rgba(0, 0, 0, 0.55)",
+                "fontFamily": "Karla",
+                "fontScale": 5,
+                "gutterBottom": 1,
+                "isBold": false,
+                "isItalic": false,
+                "lineHeight": 7
+            },
+            "small-subhead": {
+                "color": "rgba(0, 0, 0, 1)",
+                "fontFamily": "Karla",
+                "fontScale": 6,
+                "gutterBottom": 1,
+                "isBold": true,
+                "isItalic": false,
+                "lineHeight": 5
+            },
+            "subhead": {
+                "color": "rgba(0, 0, 0, 1)",
+                "fontFamily": "Karla",
+                "fontScale": 8,
+                "gutterBottom": 1,
+                "isBold": true,
+                "isItalic": false,
+                "lineHeight": 5
+            }
+        },
+        "pageWidth": "1140px",
+        "trackingCode": {
+            "endBodyTag": "",
+            "headTag": ""
+        },
+        "wideContent": true
+    },
+    "schema": {
+        "version": 71
+    },
+    "sessions": {
+        "1716826319974": {
+            "browser": "Chrome 124.0.0.0",
+            "engine": "WebKit 537.36",
+            "os": "Mac OS 10.15.7",
+            "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        },
+        "1716826383110": {
+            "browser": "Chrome 124.0.0.0",
+            "engine": "WebKit 537.36",
+            "os": "Mac OS 10.15.7",
+            "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        }
+    }
+}

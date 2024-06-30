@@ -1,0 +1,19 @@
+[
+    {
+        "section_name": "Hero",
+        "content": [
+            {
+                "type": "headline",
+                "text": "Build High-Converting Landing Pages, Effortlessly."
+            },
+            {
+                "type": "paragraph",
+                "text": "Leadpages empowers you to create stunning landing pages, capture leads, track results, and launch your business to new heights.  Get started today and see the difference!"
+            },
+            {
+                "type": "LpButtonReact",
+                "text": "Try Leadpages Now"
+            }
+        ]
+    }
+]
