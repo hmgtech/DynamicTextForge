@@ -7,6 +7,31 @@
 - Extract text from JSON data while keeping track of text types (e.g., headlines, paragraphs, buttons).
 - Replace text content with new context with AI. 
 
+# Table of Contents
+
+1. [Dynamic Text Forge Overview](#dynamic-text-forge)
+    - [Project Structure](#project-structure)
+
+2. [Text Extraction Task](#text-extraction-task)
+
+3. [Text Replacement Task](#text-replacement-task)
+
+4. [Prerequisites](#prerequisites)
+
+5. [Installation](#installation)
+
+6. [Usage](#usage)
+
+7. [Unit Tests](#unit-tests)
+
+8. [Output](#output-2)
+
+9. [License](#license)
+
+10. [Author](#author)
+
+11. [Future Scope for Improvements](#future-scope-for-improvements)
+
 ## Project Structure
 
 ```sh
