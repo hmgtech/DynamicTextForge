@@ -30,6 +30,7 @@ def ensure_directory_exists(directory: Path) -> None:
         print(f"Error creating directory {directory}: {e}")
 
 def create_text_mapping(extracted_json, replaced_json):
+    """Create a mapping of text from the extracted JSON to the replaced JSON."""
     try:
         text_mapping = {}
         for ext_section, rep_section in zip(extracted_json, replaced_json):
