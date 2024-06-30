@@ -70,6 +70,13 @@ DynamicTextForge
         - Add `text` with `text_type` to the appropriate `section_name` in `results`.
         - If `section_name` exists, add content.
         - If `section_name` does not exist, add to "Unsectioned".
+### Time Complexity
+The time complexity of the `extract_text` method is **O(n)**, where **n** is the total number of elements in the input data structure. This complexity arises because the method traverses through each element exactly once, whether it's a dictionary key-value pair or a list item.
+
+### Space Complexity
+The space complexity of the `extract_text` method is **O(n + k)**:
+- **O(n)** space is used by the `results` list and the `extracted_set`, where **n** is the total number of elements in the input data structure.
+- **O(k)** space is used on the call stack due to recursion, where **k** is the maximum depth of recursion in the nested data structure.
 
 ---
 
@@ -119,6 +126,15 @@ DynamicTextForge
         - Handle nested dictionaries and lists by recursively calling itself.
     4. **Return**:
         - Return the updated `original` JSON structure.
+
+### Time Complexity
+- **Rephrase Section (`rephrase_section` method)**: O(n), where n is the number of sections in `self.json_data`.
+- **Replace Text in Original (`replace_text_in_original` method)**: O(m), where m is the total number of elements in the nested data structure `data`.
+
+### Space Complexity
+- **Rephrase Section (`rephrase_section` method)**: O(n), due to space for `processed_json_data`, where n is the number of sections in `self.json_data`.
+- **Replace Text in Original (`replace_text_in_original` method)**: O(k + t), where k is the maximum recursion depth and t is the number of entries in `text_mapping`. This includes space for the recursive call stack and the `text_mapping` dictionary.
+
 
 ## Prerequisites
 
