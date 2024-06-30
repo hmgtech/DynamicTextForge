@@ -23,6 +23,9 @@ DynamicTextForge
 │   └── extracted_text.json
 │   └── replaced_text_checkpoint.json
 │   └── replaced_text_with_original.json
+└── test/
+│   └── text_extractor_test.py
+│   └── text_replacer_test.py
 ├── .env
 ├── .gitignore
 ├── config.py
@@ -154,7 +157,10 @@ DynamicTextForge
     ```sh
     GOOGLE_GEMINI_API_KEY=add_gemini_api_key_here
     ```
-
+5. Install DynamicTextForge package in editable mode for development using `setup.py` file:
+    ```sh
+    pip install -e .
+    ```
 ## Usage
 
 1. Place input JSON file in the `input` directory. The file should be named `test.json` or adjust the path in `main.py` accordingly.
@@ -165,6 +171,13 @@ DynamicTextForge
     ```
 
 3. The script will print the extracted text and the replaced text to the console.
+
+## Unit Tests
+
+1. Run all unit tests using `unittest`:
+    ```sh
+    python -m unittest discover -s tests
+    ```
 
 ## Output
 
