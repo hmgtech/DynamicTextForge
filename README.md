@@ -157,7 +157,7 @@ DynamicTextForge
     ```sh
     GOOGLE_GEMINI_API_KEY=add_gemini_api_key_here
     ```
-5. Install DynamicTextForge package in editable mode for development using `setup.py` file:
+5. [OPTIONAL] Install DynamicTextForge package in editable mode for development using `setup.py` file:
     ```sh
     pip install -e .
     ```
@@ -206,7 +206,7 @@ This project is licensed under the MIT License.
    - Expand content generation capabilities to include creating images tailored to the generated text. This enhances visual appeal and engagement.
 
 3. **Create User Interface (UI)**:
-   - Develop a user-friendly interface for managing content and image generation tasks. It will simplify input, settings adjustment, and visualizing outputs.
+   - Once the system is reliable, we can develop a friendly UI for users to upload JSON files. They can easily view the newly generated content and visualize its representation as a website.
 
 4. **Migration to Cloud Infrastructure (e.g., AWS)**:
    - Move our entire generation process to a cloud platform like AWS for scalability, reliability, and cost efficiency.
